@@ -1,0 +1,54 @@
+html {
+  font-size: 1rem;
+}
+
+.font-title {
+  font-family: 'Pacifico', cursive;
+}
+
+.img-carousel {
+  object-fit:cover; object-position: 0 80%;
+  height: 400px;
+}
+
+.card-img {
+  width: 18rem;
+  object-fit:cover;
+  object-position: 0 60%;
+}
+
+.card-img-top {
+  height:200px;
+  object-fit:cover;
+  object-position: 0 60%;
+}
+
+.round-thumb {
+  border-radius:50%; 
+  width:250px; 
+  height:250px; 
+  object-fit:cover; 
+  object-position: 0 60%; 
+}
+
+.icons {
+  font-size: 2rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
