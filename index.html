@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fruta e fruto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand font-title text-danger" href="#">fruta&fruto</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">início <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#receitas">receitas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quem-somos">quem somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#modal-contato" href="#">contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="carrossel-principal">
+      <div id="carousel-controladores" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-controladores" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-controladores" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="src/img/feira-livre.jpg" class="img-carousel d-block w-100" alt="barraca de frutas e verduras em uma feira livre">
+            <div class="carousel-caption h-50 d-none d-md-block">
+              <h2 class="font-title shadow-sm text-center display-4">Reaproveite melhor os alimentos!</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="src/img/maos-cozinhando.jpg" class="img-carousel d-block w-100" alt="tigelas com ingredientes culinários sendo manuseadas por pessoas, vistas por cima">
+            <div class="carousel-caption h-50 d-none d-md-block">
+              <h2 class="font-title shadow-sm text-center display-4">Economize e ganhe em saúde!</h2>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-controladores" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-controladores" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="titulo">
+      <div class="py-5 px-2">
+        <h1 class="text-center text-danger font-title">Receitas para economizar e ganhar saúde</h1>
+        <p class="text-center text-secondary">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
+      </div>
+    </section>
+
+    <section id="receitas" class="bg-light">
+      <div class="container pb-5">
+        <div class="row justify-content-md-around justify-content-center">
+          <div class="card mt-5 border-danger card-img">
+            <img src="src/img/receita-abacate.jpg" class="card-img-top" alt="tigela com salada de abacate, vista superior">
+            <div class="card-body">
+              <h5 class="card-title">Tigela de abacate</h5>
+              <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+              <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modal-receita">Veja a receita</a>
+            </div>
+          </div>
+
+          <div class="card mt-5 border-danger card-img">
+            <img src="src/img/receita-kiwi.jpg" class="card-img-top" alt="tigela de mingau com kiwi, vista superior">
+            <div class="card-body">
+              <h5 class="card-title">Salada de kiwi</h5>
+              <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+              <a href="#" class="btn btn-danger">Veja a receita</a>
+            </div>
+          </div>
+
+          <div class="card mt-5 border-danger card-img">
+            <img src="src/img/receita-mix.jpg" class="card-img-top" alt="prato com mix de vegetais e mão de pessoa adicionando azeite, vista superior">
+            <div class="card-body">
+              <h5 class="card-title">Mix de vegetais</h5>
+              <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+              <a href="#" class="btn btn-danger">Veja a receita</a>
+            </div>
+          </div>
+
+          <div class="card mt-5 border-danger card-img">
+            <img src="src/img/receita-pimentoes.jpg" class="card-img-top" alt="prato de salada de pimentões com alguns ingredientes ao lado, vista superior">
+            <div class="card-body">
+              <h5 class="card-title">Pimentões à Juliana</h5>
+              <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+              <a href="#" class="btn btn-danger">Veja a receita</a>
+            </div>
+          </div>
+
+          <div class="card mt-5 border-danger card-img">
+            <img src="src/img/receita-oriental.jpg" class="card-img-top" alt="tigela com salada de vegetais estilo oriental, vista de cima">
+            <div class="card-body">
+              <h5 class="card-title">Prato oriental</h5>
+              <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+              <a href="#" class="btn btn-danger">Veja a receita</a>
+            </div>
+          </div>
+
+          <div class="card mt-5 border-danger card-img">
+            <img src="src/img/receita-beterrabas.jpg" class="card-img-top" alt="tigela com beterrabas e dentes de alho assados em primeiro plano, com ingredientes ao fundo">
+            <div class="card-body">
+              <h5 class="card-title">Beterrabas assadas</h5>
+              <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+              <a href="#" class="btn btn-danger">Veja a receita</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quem-somos">
+      <div class="py-5 px-2">
+        <h2 class="text-center text-danger font-title">Quem somos</h2>
+        <p class="text-center text-secondary">Conheça a comunidade por trás da iniciativa</p>
+      </div>
+
+      <div class="container pb-5">
+        <div class="row justify-content-around">
+          <figure class="figure">
+            <img src="src/img/roberta.jpg" class="img-thumbnail border-danger round-thumb" alt="foto do rosto de uma pessoa">
+            <figcaption class="figure-caption text-center text-danger mt-3 font-title"><h4>Roberta</h4></figcaption>
+            <figcaption class="figure-caption text-center">conteúdo</figcaption>
+          </figure>
+          <figure class="figure">
+              <img src="src/img/marcela.jpg" class="img-thumbnail border-danger round-thumb" alt="foto do rosto de uma pessoa">
+              <figcaption class="figure-caption text-center text-danger mt-3 font-title"><h4>Marcela</h4></figcaption>
+              <figcaption class="figure-caption text-center">chef de cozinha</figcaption>
+          </figure>
+          <figure class="figure">
+              <img src="src/img/andreia.jpg" class="img-thumbnail border-danger round-thumb" alt="foto do rosto de uma pessoa">
+              <figcaption class="figure-caption text-center text-danger mt-3 font-title"><h4>Andréia</h4></figcaption>
+              <figcaption class="figure-caption text-center">pequena produtora</figcaption>
+          </figure> 
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container-fluid d-flex bg-secondary py-3 justify-content-center">
+        <a href="#" class="text-decoration-none py-1 mx-2"><p class="text-light">contato: email@frutafruto.com.br</p></a>
+        <a href="#" class="text-decoration-none mx-2"><i class="icons text-light fab fa-facebook-square"></i></a>
+        <a href="#" class="text-decoration-none mx-2"><i class="icons text-light fab fa-instagram"></i></a>
+        <a href="#" class="text-decoration-none mx-2"><i class="icons text-light fab fa-twitter-square"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- modal receita -->
+
+  <div class="modal fade" id="modal-receita" tabindex="-1" role="dialog" aria-labelledby="modal-receita-titulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-receita-titulo">Tigela de abacate</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="src/img/receita-abacate.jpg" class="card-img-top pb-3" alt="tigela com salada de abacate, vista superior">
+          <h6>Ingredientes</h6>
+          <ul>
+            <li>1 cabeça de alface, lavada e folhas rasgadas em pedaços grandes</li>
+            <li>2 tomates, fatiados ou cortados em quatro</li>
+            <li>½ cebola, fatiada bem fina</li>
+            <li>1 abacate, fatiado ou em cubos</li>
+            <li>1 colher de sopa de coentro picado bem fino</li>
+            <li>Suco de 2 limões</li>
+            <li>2 colheres de sopa de azeite de oliva</li>
+            <li>Sal e pimenta a gosto</li>
+          </ul>
+          <h6>Modo de preparo</h6>
+          <p>Para fazer o molho, misture o coentro picado, o suco de limão, o azeite de oliva, o sal e a pimenta. Coloque a alface, os tomates, a cebola e o abacate em uma vasilha grande. Misture tudo e sirva.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- modal contato -->
+
+<div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="modal-contato-titulo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-contato-titulo">Entre em contato</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Seu nome">
+          </div>
+          <label class="sr-only" for="inlineFormInputGroup">e-mail</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Seu e-mail">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger">Enviar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
