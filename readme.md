@@ -1,6 +1,6 @@
-#Projeto para curso de Bootstrap 4
+# Projeto para curso de Bootstrap 4
 
-##Ementa (sujeita a alterações)
+## Ementa (sujeita a alterações)
 
 * Apresentação da ferramenta
 * O que é framework
