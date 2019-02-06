@@ -2,28 +2,28 @@ html {
   font-size: 1rem;
 }
 
-.font-title {
+.fonte-titulo {
   font-family: 'Pacifico', cursive;
 }
 
-.img-carousel {
+.imagem-carrossel {
   object-fit:cover; object-position: 0 80%;
   height: 400px;
 }
 
-.card-img {
+.card-imagem {
   width: 18rem;
   object-fit:cover;
   object-position: 0 60%;
 }
 
-.card-img-top {
+.card-imagem-top {
   height:200px;
   object-fit:cover;
   object-position: 0 60%;
 }
 
-.round-thumb {
+.thumb-redondo {
   border-radius:50%; 
   width:250px; 
   height:250px; 
@@ -31,25 +31,26 @@ html {
   object-position: 0 60%; 
 }
 
-.icons {
+.icones {
   font-size: 2rem;
 }
 
-
-.text-special-color {
+.texto-cor-especial {
   color: #8D0606;
 }
 
-.border-special-color {
+.borda-cor-especial {
   border-color: #8D0606;
 }
 
-.btn-special-color {
+.btn-cor-especial {
   background-color: #8D0606;
   color: white;
-
 }
 
+#cor-titulo {
+  color: #8D0606;
+}
 
 @include media-breakpoint-up(sm) {
   html {
