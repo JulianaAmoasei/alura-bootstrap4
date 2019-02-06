@@ -35,6 +35,22 @@ html {
   font-size: 2rem;
 }
 
+
+.text-special-color {
+  color: #8D0606;
+}
+
+.border-special-color {
+  border-color: #8D0606;
+}
+
+.btn-special-color {
+  background-color: #8D0606;
+  color: white;
+
+}
+
+
 @include media-breakpoint-up(sm) {
   html {
     font-size: 1.2rem;
