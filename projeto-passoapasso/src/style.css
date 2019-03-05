@@ -5,5 +5,21 @@
 }
 
 .fonte-titulo {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', cursive; 
+}
+
+.texto-cor-especial {
+  color: #8D0606;
+}
+
+article {
+  width: 18rem;
+}
+
+.borda-cor-especial {
+  border-color: #8D0606;
+}
+
+.btn-cor-especial {
+  background-color: #8D0606;
 }
