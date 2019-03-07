@@ -12,9 +12,16 @@
   color: #8D0606;
 }
 
-article {
+.card-largura {
   width: 18rem;
 }
+
+.card-imagem-posicao {
+  height:200px;
+  object-fit:cover;
+  object-position: 0 60%;
+}
+
 
 .borda-cor-especial {
   border-color: #8D0606;
@@ -22,4 +29,5 @@ article {
 
 .btn-cor-especial {
   background-color: #8D0606;
+  color: white;
 }
