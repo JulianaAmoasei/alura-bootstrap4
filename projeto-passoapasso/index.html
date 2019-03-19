@@ -12,7 +12,7 @@
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">fruto & fruta</a>
+      <a class="navbar-brand fonte-titulo texto-cor-especial" href="#">fruto & fruta</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
@@ -20,7 +20,7 @@
           <a class="nav-item nav-link active" href="#">Início <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#">Receitas</a>
           <a class="nav-item nav-link" href="#">Quem somos</a>
-          <a class="nav-item nav-link" href="#">Contato</a>
+          <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#modal-contato">Contato</a>
         </div>
       </div>
     </nav>
@@ -65,7 +65,7 @@
       </div>
     </section>
 
-    <section id="receitas" class="bg-light">
+    <section id="receitas" class="bg-light pb-5">
 
       <div class="container d-flex flex-wrap justify-content-md-around justify-content-center">
         <article class="card borda-cor-especial card-largura mt-5">
@@ -122,14 +122,43 @@
           </div>
         </article>
       </div>   
-
-    <section id="footer">
-        <a href="#">contato: email@frutafruto.com.br</a>
-        <a href="#"><i class="icones text-light fab fa-facebook-square"></i></a>
-        <a href="#"><i class="icones text-light fab fa-instagram"></i></a>
-        <a href="#"><i class="icones text-light fab fa-twitter-square"></i></a>
-    </section>
   </main>
+
+  <footer id="footer" class="bg-secondary py-3 mx-auto">
+    <p class="text-center m-0"><a href="#" class="text-light text-decoration-none">contato: email@frutafruto.com.br</a></p>
+  </footer>
+
+  <!-- modal -->
+
+<div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <dialog class="modal-content">
+      <header class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </header>
+      <article class="modal-body">
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="informe seu nome">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="informe seu e-mail">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="deixe sua mensagem" rows="3"></textarea>
+          </div>
+        </form>
+      </article>
+      <footer class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-cor-especial">Enviar</button>
+      </footer>
+    </dialog>
+  </div>
+</div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

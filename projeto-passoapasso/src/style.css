@@ -9,7 +9,7 @@
 }
 
 .texto-cor-especial {
-  color: #8D0606;
+  color: #8D0606!important;
 }
 
 .card-largura {
@@ -31,3 +31,4 @@
   background-color: #8D0606;
   color: white;
 }
+
